@@ -71,13 +71,13 @@
                     </div>
                     <p class="opacity-75 text-[14px] hover:text-blue-700">Transfer Money</p>
                 </div>
-                <div class="border hover:border-blue-500 cursor-pointer rounded-md flex flex-col gap-1 justify-center items-center p-3">
+                <div id="bonusNav" class="border hover:border-blue-500 cursor-pointer rounded-md flex flex-col gap-1 justify-center items-center p-3">
                     <div class="w-[30px]">
                         <img src="images/getBonus.png" alt="">
                     </div>
                     <p class="opacity-75 text-[14px] hover:text-blue-700">Get Bonus</p>
                 </div>
-                <div class="border hover:border-blue-500 cursor-pointer rounded-md flex flex-col gap-1 justify-center items-center p-3">
+                <div id="payBillNav" class="border hover:border-blue-500 cursor-pointer rounded-md flex flex-col gap-1 justify-center items-center p-3">
                     <div class="w-[30px]">
                         <img src="images/payBill.png" alt="">
                     </div>
@@ -198,12 +198,75 @@
                     </div>
                 </div>
               </div>
+
+
+             <!-- Cash Out Money -->
+              <div id="getBonus">
+                <div>
+                    <h2 class="text-[18px] font-semibold mt-7 mb-4">Get Bonus</h2>
+                    <div class=" bg-base-100 shrink-0 shadow-md rounded-[14px]">
+                        <form class="card-body">
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text font-[500] text-[16px]">Enter Bonus Coupon </span>
+                            </label>
+                            <input id="bonusCoupon" value="RIJOAN$100" type="text" placeholder="Add Amount to withdraw" class="input input-bordered rounded-[32px] bg-[#F4F5F7] border-none" required />
+                          </div>
+                          <div class="form-control mt-6">
+                            <button id="get" class="btn btn-primary rounded-[32px]">Get Bonus</button>
+                          </div>
+                        </form>
+                    </div>
+                </div>
+              </div>
+
+
+
+              <!-- Pay Bill -->
+              <div id="payBill">
+                <div>
+                    <h2 class="text-[18px] font-semibold mt-7 mb-4">Pay Bill</h2>
+                    <div class=" bg-base-100 shrink-0 shadow-md rounded-[14px]">
+                        <form class="card-body">
+                          <div class="form-control">
+                            <label class="label">
+                                <span class="label-text font-[500] text-[16px]">Select To Pay</span>
+                              </label>
+                            <select id="Paybank" class="select select-bordered w-full border-none bg-[#F4F5F7] text-[16px] rounded-[32px]" required>
+                                <option disabled selected>Select</option>
+                                <option>Wifi Bill</option>
+                                <option>Current Bill</option>
+                                <option>Gas Bill</option>
+                              </select>
+                            <label class="label">
+                              <span class="label-text font-[500] text-[16px]">Biller Account Number</span>
+                            </label>
+                            <input id="PayaddMoneyNumber" type="text" placeholder="Enter account number" value="01637856264" class="input input-bordered rounded-[32px] bg-[#F4F5F7] border-none" required />
+                            <label class="label">
+                              <span class="label-text font-[500] text-[16px]">Amount to Pay</span>
+                            </label>
+                            <input id="Payamount" type="text" placeholder="Add Amount to withdraw" class="input input-bordered rounded-[32px] bg-[#F4F5F7] border-none" required />
+                          </div>
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text font-[500] text-[16px]">Pin Number</span>
+                            </label>
+                            <input id="PayaddMoneyPin" type="text" value="1234" placeholder="Enter 4 Digit pin" class="input input-bordered rounded-[32px] bg-[#F4F5F7] border-none" required />
+                          </div>
+                          <div class="form-control mt-6">
+                            <button id="payBillBtn" class="btn btn-primary rounded-[32px]">Pay Now</button>
+                          </div>
+                        </form>
+                    </div>
+                </div>
+              </div>
         </div>
     </section>
     <script src="Script/nav.js"></script>
     <script src="Script/addMoney.js"></script>
     <script src="Script/withdrawMoney.js"></script>
     <script src="Script/transferMoney.js"></script>
-    
+    <script src="Script/getBonus.js"></script>
+    <script src="Script/payBill.js"></script>
 </body>
 </html>

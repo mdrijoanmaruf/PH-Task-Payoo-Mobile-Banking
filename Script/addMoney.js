@@ -1,5 +1,3 @@
-
-// Add Money
 document.getElementById('add').addEventListener('click' , function(e){
     e.preventDefault()
     let balance = localStorage.getItem('balance');
