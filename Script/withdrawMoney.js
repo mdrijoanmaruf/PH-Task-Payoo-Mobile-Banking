@@ -1,7 +1,6 @@
 document.getElementById('withdraw').addEventListener('click' , function(e){
     e.preventDefault();
 
-    e.preventDefault()
     let balance = localStorage.getItem('balance');
     if(!balance){
         balance = "50000";

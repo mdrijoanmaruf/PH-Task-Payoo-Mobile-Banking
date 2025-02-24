@@ -65,7 +65,7 @@
                     </div>
                     <p class="opacity-75 text-[14px] hover:text-blue-700">Cash Out</p>
                 </div>
-                <div class="border hover:border-blue-500 cursor-pointer rounded-md flex flex-col gap-1 justify-center items-center p-1">
+                <div id="transferNav" class="border hover:border-blue-500 cursor-pointer rounded-md flex flex-col gap-1 justify-center items-center p-1">
                     <div class="w-[30px]">
                         <img src="images/transferMoney.png" alt="">
                     </div>
@@ -166,11 +166,44 @@
                     </div>
                 </div>
               </div>
+
+
+
+             <!-- Cash Out Money -->
+              <div id="transferMoney">
+                <div>
+                    <h2 class="text-[18px] font-semibold mt-7 mb-4">Transfer Money</h2>
+                    <div class=" bg-base-100 shrink-0 shadow-md rounded-[14px]">
+                        <form class="card-body">
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text font-[500] text-[16px]">User Account Number</span>
+                            </label>
+                            <input id="userNumber" type="text" placeholder="Enter account number" value="01813606468" class="input input-bordered rounded-[32px] bg-[#F4F5F7] border-none" required />
+                            <label class="label">
+                              <span class="label-text font-[500] text-[16px]">Amount </span>
+                            </label>
+                            <input id="transferAmount" type="text" placeholder="Add Amount to withdraw" class="input input-bordered rounded-[32px] bg-[#F4F5F7] border-none" required />
+                          </div>
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text font-[500] text-[16px]">Pin Number</span>
+                            </label>
+                            <input id="transferPin" type="text" value="1234" placeholder="Enter 4 Digit pin" class="input input-bordered rounded-[32px] bg-[#F4F5F7] border-none" required />
+                          </div>
+                          <div class="form-control mt-6">
+                            <button id="transfer" class="btn btn-primary rounded-[32px]">Send Now</button>
+                          </div>
+                        </form>
+                    </div>
+                </div>
+              </div>
         </div>
     </section>
     <script src="Script/nav.js"></script>
     <script src="Script/addMoney.js"></script>
     <script src="Script/withdrawMoney.js"></script>
+    <script src="Script/transferMoney.js"></script>
     
 </body>
 </html>
