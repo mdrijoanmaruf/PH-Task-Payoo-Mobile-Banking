@@ -8,10 +8,6 @@ document.getElementById('add').addEventListener('click' , function(e){
     } else{
         balance = parseFloat(balance);
     }
-
-
-
-    // let balance = document.getElementById('balance').innerText;
     balance = parseFloat(balance);
 
     let amount = parseFloat(document.getElementById('amount').value);
