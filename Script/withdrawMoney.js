@@ -39,8 +39,7 @@ document.getElementById('withdraw').addEventListener('click' , function(e){
             document.getElementById('balance').innerHTML = balance;
             localStorage.setItem('balance', balance);
 
-            const newHistory = document.createElement("div");
-                newHistory.innerHTML = `
+            const newHistoryHTML = `
                 <div class="flex justify-between items-center text-white px-4 py-2 rounded-md shadow-sm bg-red-700">
                     <div class="flex items-center gap-6">
                         <div class="bg-white p-3 rounded-full">
@@ -57,10 +56,35 @@ document.getElementById('withdraw').addEventListener('click' , function(e){
                     </div>
                 </div>
                 `
-                history.prepend(newHistory)
+                let historyList = JSON.parse(localStorage.getItem('history')) || [];
+                historyList.unshift(newHistoryHTML); 
+                localStorage.setItem('history', JSON.stringify(historyList)); 
+                displayHistory();
         }
     }
     else{
         alert("Fill The Form")
     }
 })
+
+
+// Function to display stored history on page load
+function displayHistory() {
+    const historyContainer = document.getElementById('history');
+    historyContainer.innerHTML = ""; // Clear existing UI history
+
+    let historyList = JSON.parse(localStorage.getItem('history')) || [];
+    historyList.forEach(entryHTML => {
+        const historyDiv = document.createElement("div");
+        historyDiv.innerHTML = entryHTML;
+        historyContainer.prepend(historyDiv);
+    });
+}
+
+// Load balance and history when the page loads
+window.addEventListener('load', function () {
+    let balance = localStorage.getItem('balance');
+    document.getElementById('balance').innerHTML = balance ? parseFloat(balance) : 50000;
+
+    displayHistory(); // Display stored history on load
+});
