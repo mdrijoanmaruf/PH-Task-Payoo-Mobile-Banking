@@ -83,7 +83,7 @@
                     </div>
                     <p class="opacity-75 text-[14px] hover:text-blue-700">Pay Bill</p>
                 </div>
-                <div class="border hover:border-blue-500 cursor-pointer rounded-md flex flex-col gap-1 justify-center items-center p-3">
+                <div id="transactionNav" class="border hover:border-blue-500 cursor-pointer rounded-md flex flex-col gap-1 justify-center items-center p-3">
                     <div class="w-[30px]">
                         <img src="images/transactions.png" alt="">
                     </div>
@@ -260,6 +260,94 @@
                     </div>
                 </div>
               </div>
+
+
+              <!-- Transactions History -->
+               <div id="TransactionHistory" class="mt-6">
+                    <div>
+                        <div class="flex justify-between items-center">
+                            <h2 class="text-[18px] font-[600] ">Transaction History</h2>
+                            <p class="font-[400] text-[14px] opacity-70 cursor-pointer">View All</p>
+                         </div>
+                         <div id="history" class="mt-5 flex flex-col gap-4">
+                            <div class="flex justify-between items-center text-white px-4 py-2 rounded-md shadow-sm bg-red-700">
+                                <div class="flex items-center gap-6">
+                                    <div class="bg-white p-3 rounded-full">
+                                        <img class="w-[25px]" src="images/transactions.png" alt="">
+                                    </div>
+                                    <div>
+                                        <h3 class="text-[18px] font-[600] ">Cash Out</h3>
+                                        <p class="text-[14px] text-[400] opacity-90">Amount : $230</p>
+                                        <p class="text-[12px] opacity-80 font-[400]">02/24/2025 10:50 PM</p>
+                                    </div>
+                                </div>
+                                <div class="cursor-pointer">
+                                   <i class="fas fa-ellipsis-v"></i>
+                                </div>
+                             </div>
+                            <div class="flex justify-between items-center text-white px-4 py-2 rounded-md shadow-sm bg-green-700">
+                                <div class="flex items-center gap-6">
+                                    <div class="bg-white p-3 rounded-full">
+                                        <img class="w-[25px]" src="images/transactions.png" alt="">
+                                    </div>
+                                    <div>
+                                        <h3 class="text-[18px] font-[600] ">Add Money</h3>
+                                        <p class="text-[14px] text-[400] opacity-90">Amount : $60000</p>
+                                        <p class="text-[12px] opacity-80 font-[400]">02/24/2025 10:30 PM</p>
+                                    </div>
+                                </div>
+                                <div class="cursor-pointer">
+                                   <i class="fas fa-ellipsis-v"></i>
+                                </div>
+                             </div>
+                            <div class="flex justify-between items-center text-white px-4 py-2 rounded-md shadow-sm bg-red-700">
+                                <div class="flex items-center gap-6">
+                                    <div class="bg-white p-3 rounded-full">
+                                        <img class="w-[25px]" src="images/transactions.png" alt="">
+                                    </div>
+                                    <div>
+                                        <h3 class="text-[18px] font-[600] ">Pay Bill</h3>
+                                        <p class="text-[14px] text-[400] opacity-90">Amount : $100</p>
+                                        <p class="text-[12px] opacity-80 font-[400]">02/24/2025 10:30 PM</p>
+                                    </div>
+                                </div>
+                                <div class="cursor-pointer">
+                                   <i class="fas fa-ellipsis-v"></i>
+                                </div>
+                             </div>
+                            <div class="flex justify-between items-center text-white px-4 py-2 rounded-md shadow-sm bg-green-700">
+                                <div class="flex items-center gap-6">
+                                    <div class="bg-white p-3 rounded-full">
+                                        <img class="w-[25px]" src="images/transactions.png" alt="">
+                                    </div>
+                                    <div>
+                                        <h3 class="text-[18px] font-[600] ">Pay Bill</h3>
+                                        <p class="text-[14px] text-[400] opacity-90">Amount : $100</p>
+                                        <p class="text-[12px] opacity-80 font-[400]">02/24/2025 10:30 PM</p>
+                                    </div>
+                                </div>
+                                <div class="cursor-pointer">
+                                   <i class="fas fa-ellipsis-v"></i>
+                                </div>
+                             </div>
+                            <div class="flex justify-between items-center text-white px-4 py-2 rounded-md shadow-sm bg-green-700">
+                                <div class="flex items-center gap-6">
+                                    <div class="bg-white p-3 rounded-full">
+                                        <img class="w-[25px]" src="images/transactions.png" alt="">
+                                    </div>
+                                    <div>
+                                        <h3 class="text-[18px] font-[600] ">Pay Bill</h3>
+                                        <p class="text-[14px] text-[400] opacity-90">Amount : $100</p>
+                                        <p class="text-[12px] opacity-80 font-[400]">02/24/2025 10:30 PM</p>
+                                    </div>
+                                </div>
+                                <div class="cursor-pointer">
+                                   <i class="fas fa-ellipsis-v"></i>
+                                </div>
+                             </div>
+                         </div>
+                    </div>
+               </div>
         </div>
     </section>
     <script src="Script/nav.js"></script>
