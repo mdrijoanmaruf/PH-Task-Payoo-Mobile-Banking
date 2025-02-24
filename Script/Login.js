@@ -8,7 +8,7 @@ document.getElementById('login').addEventListener("click" , function(event){
     if(number && pin){
         
         if(number === '01813606468' && pin === '1234'){
-            window.location.href = "../main.html"
+            window.location.href = "main.html"
         }
         
     }
