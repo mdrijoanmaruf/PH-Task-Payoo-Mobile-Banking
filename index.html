@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoo Mobile Banking</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-300 h-screen">
+    <section class="md:max-w-xl w-full bg-gray-100 mx-auto h-screen">
+        <div>
+            <div>
+                <div class="w-[70%] mx-auto">
+                    <img class="px-10 pt-[120px]" src="images/loginLogo.png" alt="">
+                </div>
+                <div>
+                    <div class="w-[82%] mx-auto">
+                        <div class="rounded-md">
+                          <div class=" bg-base-100 shrink-0 shadow-md rounded-[24px]">
+                            <form class="card-body">
+                              <div class="form-control">
+                                <label class="label">
+                                  <span class="label-text font-[500] text-[16px]">Mobile Number</span>
+                                </label>
+                                <input id="number" type="text" placeholder="Enter your number" value="01813606468" class="input input-bordered rounded-[32px] bg-[#F4F5F7] border-none" required />
+                              </div>
+                              <div class="form-control">
+                                <label class="label">
+                                  <span class="label-text font-[500] text-[16px]">4 Digit Pin</span>
+                                </label>
+                                <input id="pin" type="text" value="1234" placeholder="Enter 4 Digit pin" class="input input-bordered rounded-[32px] bg-[#F4F5F7] border-none" required />
+                              </div>
+                              <div class="form-control mt-6">
+                                <button id="login" class="btn btn-primary rounded-[32px]">Login</button>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./Script/Login.js"></script>
+</body>
+</html>
