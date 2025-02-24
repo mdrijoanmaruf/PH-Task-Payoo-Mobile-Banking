@@ -1,3 +1,5 @@
+
+
 document.getElementById('login').addEventListener("click" , function(event){
     event.preventDefault();
     
@@ -10,6 +12,9 @@ document.getElementById('login').addEventListener("click" , function(event){
         if(number === '01813606468' && pin === '1234'){
             window.location.href = "main.html"
         }
+        else{
+            alert('Incorrect Account Number or Pin')
+        }
         
     }
     else{
@@ -18,3 +23,4 @@ document.getElementById('login').addEventListener("click" , function(event){
     
     
 })
+

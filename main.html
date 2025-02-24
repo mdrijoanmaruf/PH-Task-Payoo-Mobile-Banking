@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
 
     <style>
         .outfit{
@@ -20,7 +21,7 @@
 </head>
 <body class="bg-gray-500 outfit">
     <section class="md:max-w-xl w-full bg-gray-100 mx-auto ">
-        <div class="w-[92%] mx-auto pt-6">
+        <div class="w-[92%] mx-auto pt-6 min-h-screen">
             <!-- Header Part -->
             <div class="flex justify-between items-center">
                <div class="flex items-center gap-2">
@@ -33,7 +34,7 @@
                     </div>
                </div>
                <div>
-                    <button class="flex items-center gap-2 border border-[#0808081A] px-3 py-2 rounded-md hover:text-red-500">
+                    <button id="logoutBtn" class="flex items-center gap-2 border border-[#0808081A] px-3 py-2 rounded-md hover:text-red-500">
                         <p>Log Out</p>
                         <i class="fas fa-sign-out-alt"></i>
                     </button>
@@ -270,12 +271,10 @@
                             <p class="font-[400] text-[14px] opacity-70 cursor-pointer">View All</p>
                          </div>
 
-                         <div id="history" class="flex flex-col gap-4 my-12">
-                            
-                         </div>
+                         
+                         
 
-
-                         <div id="history" class="mt-5 flex flex-col gap-4">
+                         <div class="mt-5 flex flex-col gap-4">
                             <div class="flex justify-between items-center text-white px-4 py-2 rounded-md shadow-sm bg-red-700">
                                 <div class="flex items-center gap-6">
                                     <div class="bg-white p-3 rounded-full">
@@ -306,36 +305,7 @@
                                    <i class="fas fa-ellipsis-v"></i>
                                 </div>
                              </div>
-                            <div class="flex justify-between items-center text-white px-4 py-2 rounded-md shadow-sm bg-red-700">
-                                <div class="flex items-center gap-6">
-                                    <div class="bg-white p-3 rounded-full">
-                                        <img class="w-[25px]" src="images/transactions.png" alt="">
-                                    </div>
-                                    <div>
-                                        <h3 class="text-[18px] font-[600] ">Pay Bill</h3>
-                                        <p class="text-[14px] text-[400] opacity-90">Amount : $100</p>
-                                        <p class="text-[12px] opacity-80 font-[400]">02/24/2025 10:30 PM</p>
-                                    </div>
-                                </div>
-                                <div class="cursor-pointer">
-                                   <i class="fas fa-ellipsis-v"></i>
-                                </div>
-                             </div>
-                            <div class="flex justify-between items-center text-white px-4 py-2 rounded-md shadow-sm bg-green-700">
-                                <div class="flex items-center gap-6">
-                                    <div class="bg-white p-3 rounded-full">
-                                        <img class="w-[25px]" src="images/transactions.png" alt="">
-                                    </div>
-                                    <div>
-                                        <h3 class="text-[18px] font-[600] ">Pay Bill</h3>
-                                        <p class="text-[14px] text-[400] opacity-90">Amount : $100</p>
-                                        <p class="text-[12px] opacity-80 font-[400]">02/24/2025 10:30 PM</p>
-                                    </div>
-                                </div>
-                                <div class="cursor-pointer">
-                                   <i class="fas fa-ellipsis-v"></i>
-                                </div>
-                             </div>
+                            
                             <div class="flex justify-between items-center text-white px-4 py-2 rounded-md shadow-sm bg-green-700">
                                 <div class="flex items-center gap-6">
                                     <div class="bg-white p-3 rounded-full">
@@ -352,6 +322,9 @@
                                 </div>
                              </div>
                          </div>
+                         <div id="history" class="flex flex-col gap-4 mt-4">
+                            
+                         </div>
                     </div>
                </div>
 
@@ -361,6 +334,7 @@
                </footer>
         </div>
     </section>
+    <script src="Script/Logout.js"></script>
     <script src="Script/nav.js"></script>
     <script src="Script/addMoney.js"></script>
     <script src="Script/withdrawMoney.js"></script>
