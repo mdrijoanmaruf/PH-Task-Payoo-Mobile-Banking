@@ -28,7 +28,7 @@
                         <img src="images/logo.svg" alt="">
                     </div>
                     <div>
-                        <h2 class="font-[800] text-[18px] text-[#080808E6]">$ <span>50000</span></h2>
+                        <h2 class="font-[800] text-[18px] text-[#080808E6]">$ <span id="balance"></span></h2>
                         <p class="font-[400] text-[14px] text-[#08080880]">Available Balance</p>
                     </div>
                </div>
@@ -53,11 +53,11 @@
 
             <!-- Accounts -->
              <div class="grid grid-cols-3 gap-3 mt-6">
-                <div class="border rounded-md flex flex-col gap-1 justify-center items-center p-3">
+                <div class="border hover:border-blue-500 cursor-pointer rounded-md flex flex-col gap-1 justify-center items-center p-3">
                     <div class="w-[30px]">
                         <img src="images/addMoney.png" alt="">
                     </div>
-                    <p class="opacity-75 text-[14px]">Add Money</p>
+                    <p class="opacity-75 text-[14px] hover:text-blue-700">Add Money</p>
                 </div>
                 <div class="border rounded-md flex flex-col gap-1 justify-center items-center p-3">
                     <div class="w-[30px]">
@@ -95,11 +95,48 @@
 
 
              <!-- Add Money -->
-              <div>
-                
+              <div id="addMoney">
+                <div>
+                    <h2 class="text-[18px] font-semibold mt-7 mb-4">Add Money</h2>
+                    <div class=" bg-base-100 shrink-0 shadow-md rounded-[14px]">
+                        <form class="card-body">
+                          <div class="form-control">
+                            <label class="label">
+                                <span class="label-text font-[500] text-[16px]">Select A Bank</span>
+                              </label>
+                            <select id="bank" class="select select-bordered w-full border-none bg-[#F4F5F7] text-[16px] rounded-[32px]" required>
+                                <option disabled selected>Select Bank</option>
+                                <option>City Bank</option>
+                                <option>DBBL Bank</option>
+                                <option>Islami Bank</option>
+                                <option>AB Bank</option>
+                                <option>UCB Bank</option>
+                                <option>EBL Bank</option>
+                              </select>
+                            <label class="label">
+                              <span class="label-text font-[500] text-[16px]">Bank Account Number</span>
+                            </label>
+                            <input id="addMoneyNumber" type="text" placeholder="Enter account number" value="01813606468" class="input input-bordered rounded-[32px] bg-[#F4F5F7] border-none" required />
+                            <label class="label">
+                              <span class="label-text font-[500] text-[16px]">Amount to Add</span>
+                            </label>
+                            <input id="amount" type="text" placeholder="Add Amount to withdraw" class="input input-bordered rounded-[32px] bg-[#F4F5F7] border-none" required />
+                          </div>
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text font-[500] text-[16px]">Pin Number</span>
+                            </label>
+                            <input id="addMoneyPin" type="text" value="1234" placeholder="Enter 4 Digit pin" class="input input-bordered rounded-[32px] bg-[#F4F5F7] border-none" required />
+                          </div>
+                          <div class="form-control mt-6">
+                            <button id="add" class="btn btn-primary rounded-[32px]">Add Money</button>
+                          </div>
+                        </form>
+                    </div>
+                </div>
               </div>
         </div>
     </section>
-    
+    <script src="Script/addMoney.js"></script>
 </body>
 </html>
