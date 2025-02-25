@@ -45,12 +45,13 @@ document.getElementById('get').addEventListener('click' , function(e){
                         </div>
                         <div>
                             <h3 class="text-[18px] font-[600] ">Coupon Bonus</h3>
-                            <p class="text-[14px] text-[400] opacity-90">Amount : ${bonusCoupon}</p>
+                            <p class="text-[14px] text-[400] opacity-90">Coupon : ${bonusCoupon}</p>
+                            <p class="text-[14px] text-[400] opacity-90">Amount : $100</p>
                             <p class="text-[12px] opacity-80 font-[400]">${getFormattedDate()}</p>
                         </div>
                     </div>
-                    <div class="cursor-pointer">
-                        <i class="fas fa-ellipsis-v"></i>
+                    <div id="delete" class="cursor-pointer">
+                        <i class="fa-solid fa-trash"></i>
                     </div>
                 </div>
                 `

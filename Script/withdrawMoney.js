@@ -47,12 +47,13 @@ document.getElementById('withdraw').addEventListener('click' , function(e){
                         </div>
                         <div>
                             <h3 class="text-[18px] font-[600] ">Cash Out Money</h3>
-                            <p class="text-[14px] text-[400] opacity-90">Amount : ${amountWithdraw}</p>
+                            <p class="text-[14px] text-[400] opacity-90">Agent Number : 0${agentNumber}</p>
+                            <p class="text-[14px] text-[400] opacity-90">Amount : $${amountWithdraw}</p>
                             <p class="text-[12px] opacity-80 font-[400]">${getFormattedDate()}</p>
                         </div>
                     </div>
-                    <div class="cursor-pointer">
-                        <i class="fas fa-ellipsis-v"></i>
+                    <div id="delete" class="cursor-pointer">
+                        <i class="fa-solid fa-trash"></i>
                     </div>
                 </div>
                 `
